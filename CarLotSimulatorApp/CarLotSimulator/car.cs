@@ -4,6 +4,11 @@ namespace CarLotSimulator;
 
 public class car
 {
+    public car()
+    {
+        
+        CarLot.numberOfCars ++;
+    }
     //Create a seperate class file called Car
     //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
     //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
@@ -35,12 +40,7 @@ public class car
         HonkNoise = honkNoise;
         Console.WriteLine($"{Make} {Model} has a honk noise that sounds like {HonkNoise}.");
     }
-
-    public car()
-    {
-        
-    }
-
+    
     public car(string make, string model, int year, string IsDrivable)
 
     {
